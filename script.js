@@ -12,11 +12,11 @@ document.querySelector('.check').addEventListener('click',function (){
     document.querySelector('.message').textContent = 'No number';
   }else if(score > 1){
     if(guess > secretNumber){
-      document.querySelector('.message').textContent = 'a bit high';
+      document.querySelector('.message').textContent = '📉 Too low!';
       score--;
     }
     else if(guess < secretNumber){
-      document.querySelector('.message').textContent = 'a bit low';
+      document.querySelector('.message').textContent = '📈 Too high!';
       score--;
     }else{
       document.querySelector('.message').textContent = 'correct answer';
